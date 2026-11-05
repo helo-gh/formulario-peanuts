@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="icone">
+            <img src="">
+        </div>
+        <h1>Peanuts para voçê</h1>
+
+        <p>Preencha o formulário para se ver no mundo Peanuts!!</p>
+
+        <form id="formulario">
+            <!-- CAMPO NOME -->
+            <label for="nome"> Nome completo: </label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <!-- CAMPO DE ESCOLHA -->
+             <label for="escolha"> prefere pessoa ou animal?</label>
+             <input type="escolha" id="escolha" placeholder="Escolha seu tipo:" required>
+
+             <label for="telefone">Telefone</label>
+             <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+
+             <!-- CAMPO DE personagem -->
+              <label for="personagem">Tipo de personagem</label>
+              <select id="personagem" required>
+
+                <option value="">Selecione uma opção</opition>
+                <option value="snoopy">Snoopy</opition>
+                <option value="woodstock">Woodstock</opition>
+                <option value="charlie bronw">Charlie Bronw</opition>
+                <option value="lucy">Lucy</opition>
+              </select>
+
+              <!-- CAMPO DE OBSERVAÇÃO -->
+               
+              <label for="mensagem">OBSERVAÇÕES:</label>
+              <textarea id="mensagem" placeholder="Digite sua mensagem">
+              </textarea>
+
+              <button type="submit"> Enviar solicitação </button>
+
+        </form>
+
+    </main>
+   
+    <script src="./main.js"></script>
+</body>
+</html>
